@@ -8,6 +8,7 @@ import (
 )
 
 func main() {
+	initializers.LoadEnv()
 	initializers.ConnectDb()
 
 	router := gin.New()
